@@ -1,0 +1,129 @@
+/* Reset and base styles  */
+* {
+  padding: 0px;
+  margin: 0px;
+  border: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Common */
+aside, nav, footer, header, section, main {
+  display: block;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+ul, ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+img, svg {
+  max-width: 100%;
+  height: auto;
+}
+
+address {
+  font-style: normal;
+}
+
+/* Form */
+input, textarea, button, select {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button, input[type=submit] {
+  display: inline-block;
+  box-shadow: none;
+  background-color: transparent;
+  background: none;
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+label {
+  cursor: pointer;
+}
+
+legend {
+  display: block;
+}
+
+.button {
+  padding: 10px 15px;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+}
+.button--active:hover {
+  background-color: blue;
+}
+.button--active:focus {
+  border-color: gray;
+}
+.button[disabled] {
+  border-color: grey;
+  color: grey;
+}
+
+.container {
+  margin: 15px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  width: 300px;
+  padding: 30px 20px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.form__title {
+  font-size: 30;
+  padding-bottom: 15px;
+}
+.form__fieldset {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border: none;
+  padding: 0;
+}
+.form__input {
+  width: 100%;
+  margin-top: 5px;
+  padding: 5px 10px;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.form__error {
+  padding-bottom: 3px;
+  height: 5px;
+  color: red;
+}
+
+/*# sourceMappingURL=styles.css.map */
