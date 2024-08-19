@@ -1,0 +1,24 @@
+{
+  "name": "nodejs-and-npm",
+  "version": "1.0.0",
+  "description": "*При выполнении задания вам понадобится npm и система сборки. Вы можете взять parcel или попробовать любую другую систему, если сможете в ней разобраться.*",
+  "source": "index.html",
+  "scripts": {
+    "sass": "sass --style=expanded --watch ./src/styles:public",
+    "serve": "parcel serve --dist-dir out",
+    "build": "parcel build  index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "card-validator": "^10.0.0",
+    "email-validator": "^2.0.4",
+    "imask": "^7.6.1",
+    "redom": "^4.1.5"
+  },
+  "devDependencies": {
+    "parcel": "^2.12.0",
+    "sass": "^1.77.8"
+  }
+}
